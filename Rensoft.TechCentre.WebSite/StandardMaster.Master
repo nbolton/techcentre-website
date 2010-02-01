@@ -1,0 +1,29 @@
+<%@ Master Language="C#" MasterPageFile="~/RootMaster.master" Inherits="Rensoft.TechCentre.WebSite.StandardMaster" %> 
+<asp:Content id="Content1" ContentPlaceholderID="BodyContentPlaceHolder" runat="server">
+    <table class="standardLayout" cellpadding="0" cellspacing="0">
+        <tr>
+            <td class="standardCeiling">&nbsp;</td>
+            <td class="standardBanner" rowspan="3">
+                <asp:Image ID="BannerImage" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td class="standardContent">
+                <div class="standardContentSpanner">&nbsp;</div>
+                <div class="standardContentInner">
+                    <asp:ContentPlaceHolder ID="StandardContentPlaceHolder" runat="server" />
+                </div>
+                <div class="standardContentPartners">
+                    <ul>
+                        <li><asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Partners/DellPartner.jpg" AlternateText="Dell Registered Partner" /></li>
+                        <!--<li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="http://www.purpleaccounts.com/sbc.htm" Target="_blank"><asp:Image ID="Image2" runat="server" ImageUrl="~/Images/Partners/Purple.jpg" AlternateText="Purple Small Business Centre" /></asp:HyperLink></li>-->
+                        <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="http://www.thebestof.co.uk/the%20isle%20of%20man/62176/1/1/the_best_of.aspx" Target="_blank"><asp:Image ID="Image3" runat="server" ImageUrl="~/Images/Partners/BestOfBubble.jpg" AlternateText="The Best of The Isle of Man" /></asp:HyperLink></li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="standardFloor" colspan="2">&nbsp;</td>
+        </tr>
+    </table>
+</asp:Content>

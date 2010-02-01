@@ -1,0 +1,50 @@
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial;
+	font-size: 76%;
+	font-size: .8em;
+}
+
+.topBar
+{
+	width: 592px;
+	background-color: #F3F9FB;
+	border-bottom: solid 1px #99AFC7;
+	padding: 2px 4px 2px 4px;
+	height: 1.7em;
+}
+
+.topBarTitle
+{
+	width: 250px;
+	float: left;
+	padding: 2px;
+	font-weight: bold;
+}
+
+.topBarIcons
+{
+	float: right;
+}
+
+.topBarIcons img
+{
+	float: left;
+	padding-top: 2px;
+}
+
+.topBarIconsText 
+{
+	float: left;
+	padding: 3px;
+}
+
+.mapLayer
+{
+	clear: both;
+	width: 600px;
+	height: 500px;
+	position: relative;
+}

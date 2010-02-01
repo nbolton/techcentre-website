@@ -1,0 +1,73 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RootMaster.Master.cs" Inherits="Rensoft.TechCentre.WebSite.RootMaster" %>
+<%@ Register Src="Menu/Menu.ascx" TagName="Menu" TagPrefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>TechCentre</title>
+    <meta id="descriptionMeta" name="description" content="" />
+    <link type="text/css" href="~/Styles/Default.css" rel="stylesheet" />
+    <script type="text/javascript" src="<%=Request.ApplicationPath%>JScript/Default.js"></script>
+    <script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1"></script>
+    <script type="text/javascript" src="<%=Request.ApplicationPath%>JScript/LiveMap.js"></script>
+</head>
+<body id="bodyTag" runat="server">
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="layout">
+                <div class="layoutHeader">
+                    <div class="layoutHeaderLeft">&nbsp;</div>
+                    <div class="layoutHeaderCentre">
+                        <div class="layoutHeaderLogo">
+                            <asp:HyperLink ID="HyperLink14" runat="server" NavigateUrl="~/Default.aspx">
+                                <asp:Image ID="LogoImage" runat="server" ImageUrl="~/Images/Layout/LayoutHeaderLogo.gif" AlternateText="TechCentre" />
+                            </asp:HyperLink>
+                        </div>
+                        <div class="layoutHeaderInfo">
+                            <div class="layoutHeaderInfoPhone">
+                                <span class="layoutHeaderInfoPhoneLeft">Call us on</span>
+                                <span class="layoutHeaderInfoPhoneRight">01624 665859</span>
+                            </div>
+                            <div class="layoutHeaderInfoLinks">
+                                <ul>
+                                    <li><asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/About/Default.aspx">About</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Contact.aspx">Contact</asp:HyperLink></li>
+                                    <li><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="layoutHeaderRight">&nbsp;</div>
+                </div>
+                <div class="layoutMenu">
+                    <div class="layoutMenuLeft">&nbsp;</div>
+                    <div class="layoutMenuCentre">
+                        <uc1:Menu id="MainMenu" runat="server" />
+                    </div>
+                    <div class="layoutMenuRight">&nbsp;</div>
+                </div>
+                <div class="layoutBody">
+                    <asp:ContentPlaceHolder ID="BodyContentPlaceHolder" runat="server" />
+                </div>
+                <div class="layoutFooter">
+                    <div class="layoutFooterLeft">&nbsp;</div>
+                    <div class="layoutFooterCentre">
+                        <span class="layoutFooterItem">Copyright &copy; 2008 TechCentre Limited</span>
+                        <span class="layoutFooterItem"><asp:HyperLink ID="HyperLink21" runat="server" NavigateUrl="~/PrivacyPolicy.aspx">Privacy Policy</asp:HyperLink></span>
+                        <span class="layoutFooterItem"><asp:HyperLink ID="HyperLink22" runat="server" NavigateUrl="~/TermsAndConditions.aspx">Terms and Conditions</asp:HyperLink></span>
+                    </div>
+                    <div class="layoutFooterRight">&nbsp;</div>
+                </div>
+            </div>
+            <div class="layoutFloor">&nbsp;</div>
+        </div>
+    </form>
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+    _uacct = "UA-1207868-10";
+    urchinTracker();
+    </script>
+</body>
+</html>

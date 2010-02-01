@@ -1,0 +1,508 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0BAF3105-2102-412C-B4D6-3988B60E7587}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rensoft.TechCentre.WebSite</RootNamespace>
+    <AssemblyName>Rensoft.TechCentre.WebSite</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MSCaptcha, Version=1.0.2832.11804, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About\HowToFind.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>HowToFind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About\HowToFind.aspx.designer.cs">
+      <DependentUpon>HowToFind.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About\HowToFindPrint.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>HowToFindPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About\HowToFindPrint.aspx.designer.cs">
+      <DependentUpon>HowToFindPrint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CustomContent.aspx.cs">
+      <DependentUpon>CustomContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomContent.aspx.designer.cs">
+      <DependentUpon>CustomContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PayPal\PayPalControl.ascx.cs">
+      <DependentUpon>PayPalControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PayPal\PayPalControl.ascx.designer.cs">
+      <DependentUpon>PayPalControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Sudoku.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Sudoku.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sudoku.aspx.designer.cs">
+      <DependentUpon>Sudoku.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Team\ChrisNaylor.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ChrisNaylor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Team\ChrisNaylor.aspx.designer.cs">
+      <DependentUpon>ChrisNaylor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Team\DavidKeating.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DavidKeating.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Team\DavidKeating.aspx.designer.cs">
+      <DependentUpon>DavidKeating.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Team\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Team\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessUsers\AntiVirus.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AntiVirus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessUsers\AntiVirus.aspx.designer.cs">
+      <DependentUpon>AntiVirus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessUsers\Backup.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Backup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessUsers\Backup.aspx.designer.cs">
+      <DependentUpon>Backup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessUsers\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessUsers\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessUsers\Networking.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Networking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessUsers\Networking.aspx.designer.cs">
+      <DependentUpon>Networking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataRecovery\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataRecovery\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisasterRecovery\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisasterRecovery\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DomainChecker\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DomainChecker\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DomainChecker\DomainSecret.cs" />
+    <Compile Include="DomainChecker\DomainWhois.aspx.cs">
+      <DependentUpon>DomainWhois.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DomainChecker\DomainWhois.aspx.designer.cs">
+      <DependentUpon>DomainWhois.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileNotFound.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>FileNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileNotFound.aspx.designer.cs">
+      <DependentUpon>FileNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LegacyRedirect.cs" />
+    <Compile Include="RemoteAssistance\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RemoteAssistance\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuDropDown.cs" />
+    <Compile Include="Menu\MenuDropDownItem.cs" />
+    <Compile Include="PrivacyPolicy.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PrivacyPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrivacyPolicy.aspx.designer.cs">
+      <DependentUpon>PrivacyPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RequestError.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>RequestError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestError.aspx.designer.cs">
+      <DependentUpon>RequestError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RootMaster.Master.cs">
+      <DependentUpon>RootMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RootMaster.Master.designer.cs">
+      <DependentUpon>RootMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerError.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ServerError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServerError.aspx.designer.cs">
+      <DependentUpon>ServerError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StandardMaster.Master.cs">
+      <DependentUpon>StandardMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StandardMaster.Master.designer.cs">
+      <DependentUpon>StandardMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Team\GavinWilby.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>GavinWilby.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Team\GavinWilby.aspx.designer.cs">
+      <DependentUpon>GavinWilby.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Team\MandySayle.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>MandySayle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Team\MandySayle.aspx.designer.cs">
+      <DependentUpon>MandySayle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Team\RalphChambers.aspx.cs">
+      <DependentUpon>RalphChambers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Team\RalphChambers.aspx.designer.cs">
+      <DependentUpon>RalphChambers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Team\TomKeating.aspx.cs">
+      <DependentUpon>TomKeating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Team\TomKeating.aspx.designer.cs">
+      <DependentUpon>TomKeating.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Team\WesleyKitching.aspx.cs">
+      <DependentUpon>WesleyKitching.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Team\WesleyKitching.aspx.designer.cs">
+      <DependentUpon>WesleyKitching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TermsAndConditions.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>TermsAndConditions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TermsAndConditions.aspx.designer.cs">
+      <DependentUpon>TermsAndConditions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeUsers\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeUsers\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="RootMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About\Default.aspx" />
+    <Content Include="About\HowToFind.aspx" />
+    <Content Include="About\HowToFindPrint.aspx" />
+    <Content Include="Images\Partners\BestOfBubble.jpg" />
+    <Content Include="Images\Partners\DellPartner.jpg" />
+    <Content Include="Images\Partners\Purple.jpg" />
+    <Content Include="Images\Sudoku\Sudoku-July-2008.gif" />
+    <Content Include="Images\Sudoku\Sudoku-June-2008.gif" />
+    <Content Include="Images\Team\ChrisNaylorLarge.jpg" />
+    <Content Include="Images\Team\ChrisNaylorSmall.jpg" />
+    <Content Include="Images\Team\ClaireKeatingLarge.jpg" />
+    <Content Include="Images\Team\ClaireKeatingSmall.jpg" />
+    <Content Include="Images\Team\DavidKeatingLarge.jpg" />
+    <Content Include="Images\Team\DavidKeatingSmall.jpg" />
+    <Content Include="Images\Team\EveryoneMouseout.jpg" />
+    <Content Include="Images\Team\EveryoneMouseover.jpg" />
+    <Content Include="Images\Team\GavinWilbyLarge.jpg" />
+    <Content Include="Images\Team\GavinWilbySmall.jpg" />
+    <Content Include="Images\Team\MandySayleLarge.jpg" />
+    <Content Include="Images\Team\MandySayleSmall.jpg" />
+    <Content Include="Images\Team\MarkBurrowsLarge.jpg" />
+    <Content Include="Images\Team\MarkBurrowsSmall.jpg" />
+    <Content Include="Images\Team\WesleyKitchingLarge.jpg" />
+    <Content Include="Images\Team\WesleyKitchingSmall.jpg" />
+    <Content Include="MSCaptcha\MSCaptcha.dll" />
+    <Content Include="Sudoku.aspx" />
+    <Content Include="Team\ChrisNaylor.aspx" />
+    <Content Include="Team\DavidKeating.aspx" />
+    <Content Include="Team\Default.aspx" />
+    <Content Include="BusinessUsers\AntiVirus.aspx" />
+    <Content Include="BusinessUsers\Backup.aspx" />
+    <Content Include="BusinessUsers\Default.aspx" />
+    <Content Include="BusinessUsers\Networking.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="DataRecovery\Default.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DisasterRecovery\Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="FileNotFound.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Home\HomeDepartmentSupport.jpg" />
+    <Content Include="Images\Home\HomeExtraMile.jpg" />
+    <Content Include="Images\Home\HomeFastKnowledge.jpg" />
+    <Content Include="Images\Home\HomeIconBusinessUsers.gif" />
+    <Content Include="Images\Home\HomeIconDataRecovery.gif" />
+    <Content Include="Images\Home\HomeIconDisasterRecovery.gif" />
+    <Content Include="Images\Home\HomeIconDomainChecker.gif" />
+    <Content Include="Images\Home\HomeIconRemoteAssistance.gif" />
+    <Content Include="Images\Home\HomeBusinessGrow.jpg" />
+    <Content Include="Images\Home\HomeIconHomeUsers.gif" />
+    <Content Include="Images\Home\HomeNeedMost.jpg" />
+    <Content Include="Images\Home\HomeProfessional.jpg" />
+    <Content Include="Images\Home\HomeRespondedPrompty.jpg" />
+    <Content Include="Images\Home\HomeSchedule.jpg" />
+    <Content Include="Images\Home\HomeSplashFloor.jpg" />
+    <Content Include="Images\Home\HomeTrustWithIT.jpg" />
+    <Content Include="Images\Layout\LayoutBack.gif" />
+    <Content Include="Images\Layout\LayoutFloor.gif" />
+    <Content Include="Images\Layout\LayoutFooterBack.gif" />
+    <Content Include="Images\Layout\LayoutFooterLeft.gif" />
+    <Content Include="Images\Layout\LayoutFooterRight.gif" />
+    <Content Include="Images\Layout\LayoutHeaderBack.gif" />
+    <Content Include="Images\Layout\LayoutHeaderLeft.gif" />
+    <Content Include="Images\Layout\LayoutHeaderLogo.gif" />
+    <Content Include="Images\Layout\LayoutHeaderRight.gif" />
+    <Content Include="Images\Layout\LayoutMenuBack.gif" />
+    <Content Include="Images\Layout\LayoutMenuLeft.gif" />
+    <Content Include="Images\Layout\LayoutMenuRight.gif" />
+    <Content Include="Images\Standard\PrintIcon.gif" />
+    <Content Include="Images\Standard\StandardBannerBack.gif" />
+    <Content Include="Images\Standard\StandardBannerConfidence.jpg" />
+    <Content Include="Images\Standard\StandardBannerDifferent.jpg" />
+    <Content Include="Images\Standard\StandardBannerLookAfter.jpg" />
+    <Content Include="Images\Standard\StandardBannerNeedMost.jpg" />
+    <Content Include="Images\Standard\StandardBannerNoWorry.jpg" />
+    <Content Include="Images\Standard\StandardBannerSafeHands.jpg" />
+    <Content Include="Images\Standard\StandardBannerSolved.jpg" />
+    <Content Include="Images\Standard\StandardContentBack.gif" />
+    <Content Include="Images\Standard\StandardBannerResponse.jpg" />
+    <Content Include="Images\Standard\StandardContentCeiling.gif" />
+    <Content Include="Images\Standard\StandardContentFloor.gif" />
+    <Content Include="DomainChecker\Default.aspx" />
+    <Content Include="DomainChecker\DomainWhois.aspx" />
+    <Content Include="JScript\LiveMap.js" />
+    <Content Include="RemoteAssistance\Default.aspx" />
+    <Content Include="JScript\Default.js" />
+    <Content Include="Menu\Menu.ascx" />
+    <Content Include="PrivacyPolicy.aspx" />
+    <None Include="Resources\ContactEmail.htm" />
+    <Content Include="RequestError.aspx" />
+    <Content Include="ServerError.aspx" />
+    <Content Include="StandardMaster.Master" />
+    <Content Include="Styles\Default.css" />
+    <Content Include="Styles\Error.css" />
+    <Content Include="Styles\MapPrint.css" />
+    <Content Include="Styles\Whois.css" />
+    <Content Include="Team\GavinWilby.aspx" />
+    <Content Include="Team\MandySayle.aspx" />
+    <Content Include="TermsAndConditions.aspx" />
+    <Content Include="HomeUsers\Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Rensoft.ErrorReporting\Rensoft.ErrorReporting\Rensoft.ErrorReporting.csproj">
+      <Project>{4DC206E8-BDF6-4CF6-B626-36DDE18A9303}</Project>
+      <Name>Rensoft.ErrorReporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rensoft.TechCentre\Rensoft.TechCentre.csproj">
+      <Project>{4DC6274C-34E5-4B6C-9B1B-9C806ED3DB8C}</Project>
+      <Name>Rensoft.TechCentre</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CustomContent.aspx" />
+    <Content Include="Images\About\Office.jpg" />
+    <Content Include="Images\Sudoku\Sudoku-September-2008.gif" />
+    <Content Include="Images\Sudoku\Sudoku-August-2008.gif" />
+    <Content Include="Images\Sudoku\Sudoku-July-2008.pdf" />
+    <Content Include="Images\Sudoku\Sudoku-June-2008.pdf" />
+    <Content Include="Images\Sudoku\Sudoku-August-2008.pdf" />
+    <Content Include="Images\Sudoku\Sudoku-September-2008.pdf" />
+    <Content Include="CustomContent\CharityWeightLoss.html" />
+    <Content Include="Images\Team\Everyone2.jpg" />
+    <Content Include="Images\Team\RalphChambersLarge.jpg" />
+    <Content Include="Images\Team\RalphChambersSmall.jpg" />
+    <Content Include="Images\Team\TomKeatingLarge.jpg" />
+    <Content Include="Images\Team\TomKeatingSmall.jpg" />
+    <Content Include="PayPal\PayPalControl.ascx" />
+    <Content Include="Team\RalphChambers.aspx" />
+    <Content Include="Team\TomKeating.aspx" />
+    <Content Include="Team\WesleyKitching.aspx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Team\ChrisNaylor.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" Condition="" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10998</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Rensoft.TechCentre.WebSite.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DomainCheckerSleep" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="SmtpServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">mail.rensoft.net</Value>
+    </Setting>
+    <Setting Name="SmtpPort" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
+    <Setting Name="SmtpUsername" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">techcentre-no-reply@auto-email.rensoft.net</Value>
+    </Setting>
+    <Setting Name="SmtpPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">B^""6AtU9veQ5tBhfb*z</Value>
+    </Setting>
+    <Setting Name="NewsletterSubscribeEmail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">subscribe@techcentre.co.im</Value>
+    </Setting>
+    <Setting Name="SmtpDefaultFrom" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">TechCentre Website &lt;techcentre-no-reply@auto-email.rensoft.net&gt;</Value>
+    </Setting>
+    <Setting Name="ContactFormTo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">webmaster@rensoft.net</Value>
+    </Setting>
+    <Setting Name="EnableErrorReporting" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ErrorReportingServiceUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://errors.rensoft.net/ReportingService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
