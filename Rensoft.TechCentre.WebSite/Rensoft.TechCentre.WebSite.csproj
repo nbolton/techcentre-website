@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{0BAF3105-2102-412C-B4D6-3988B60E7587}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
@@ -436,16 +436,6 @@
     <Content Include="HomeUsers\Default.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Rensoft.ErrorReporting\Rensoft.ErrorReporting\Rensoft.ErrorReporting.csproj">
-      <Project>{4DC206E8-BDF6-4CF6-B626-36DDE18A9303}</Project>
-      <Name>Rensoft.ErrorReporting</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Rensoft.TechCentre\Rensoft.TechCentre.csproj">
-      <Project>{4DC6274C-34E5-4B6C-9B1B-9C806ED3DB8C}</Project>
-      <Name>Rensoft.TechCentre</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="CustomContent.aspx" />
     <Content Include="Images\About\Office.jpg" />
     <Content Include="Images\Sudoku\Sudoku-September-2008.gif" />
@@ -477,6 +467,12 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rensoft.TechCentre\Rensoft.TechCentre.csproj">
+      <Project>{4DC6274C-34E5-4B6C-9B1B-9C806ED3DB8C}</Project>
+      <Name>Rensoft.TechCentre</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" Condition="" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -497,9 +493,6 @@
           <IISUrl>
           </IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

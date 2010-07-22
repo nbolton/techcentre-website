@@ -6,7 +6,6 @@ using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
 using Rensoft.TechCentre.WebSite.Properties;
-using Rensoft.ErrorReporting;
 
 namespace Rensoft.TechCentre.WebSite
 {
@@ -30,14 +29,6 @@ namespace Rensoft.TechCentre.WebSite
             if (checkInvalidRequest(Server.GetLastError()))
             {
                 Response.Redirect("~/RequestError.aspx", true);
-            }
-            else if (Settings.Default.EnableErrorReporting)
-            {
-                WebErrorHelper helper = new WebErrorHelper(
-                    Settings.Default.ErrorReportingServiceUrl,
-                    "TECH", Server.GetLastError(), Request);
-
-                helper.SendReport();
             }
         }
 
