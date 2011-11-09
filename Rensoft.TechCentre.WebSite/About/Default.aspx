@@ -11,5 +11,5 @@
     
     <h2>Careers with TechCentre</h2>
     <p>We are always on the lookout for Professional employees that would complement the hard working, team players of TechCentre. Drop us a line, with what you can offer TechCentre and we can talk about your future with us.</p>
-	<p>We have had a lot of email and phone calls from India and Asia in regard to a recruitment campaign that we are having in those countries. We are not recruiting anyone at present and we are not asking anyone to take exams or tests to qualify for an application. Please go back and contact your representative in your country as this looks to be a scam. DO NOT CONTACT US, we cannot help.</P>
+	<p>We have had a lot of email and phone calls from India and Asia in regard to a recruitment campaign that we are having in those countries. We are not recruiting anyone at present and we are not asking anyone to take exams or tests to qualify for an application. Please go back and contact your representative in your country as this looks to be a scam. If you are outside the UK, do not contact us, we cannot help.</P>
 </asp:Content>
