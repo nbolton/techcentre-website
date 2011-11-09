@@ -16,7 +16,7 @@
                 <div class="teamIndexText">
                     <h2><asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Team/DavidKeating.aspx">David Keating</asp:HyperLink></h2>
                     <h3>Managing Director</h3>
-                    <p>David has been with the company over 7 years, leading the company on a day to day basis. <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Team/DavidKeating.aspx">Read David’s story</asp:HyperLink>.</p>
+                    <p>David has been with the company over 8 years, leading the company on a day to day basis. <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Team/DavidKeating.aspx">Read David’s story</asp:HyperLink>.</p>
                 </div>
             </li>
             <li>
@@ -34,11 +34,11 @@
             <li>
                 <div class="teamIndexImage">
                     <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/Team/MandySayle.aspx">
-                        <asp:Image ID="Image4" runat="server" AlternateText="Mandy Sayle" ImageUrl="~/Images/Team/MandySayleSmall.jpg" />
+                        <asp:Image ID="Image4" runat="server" AlternateText="Mandy Shields" ImageUrl="~/Images/Team/MandySayleSmall.jpg" />
                     </asp:HyperLink>
                 </div>
                 <div class="teamIndexText">
-                    <h2><asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/Team/MandySayle.aspx">Mandy Sayle</asp:HyperLink></h2>
+                    <h2><asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/Team/MandySayle.aspx">Mandy Shields</asp:HyperLink></h2>
                     <h3>Office Manager</h3>
                     <p>Mandy is our Office Manager &amp; Coordinator here at TechCentre. <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/Team/MandySayle.aspx">Read Mandy’s story</asp:HyperLink>.</p>
                 </div>
@@ -52,7 +52,7 @@
                 <div class="teamIndexText">
                     <h2><asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Team/GavinWilby.aspx">Gavin Wilby</asp:HyperLink></h2>
                     <h3>Senior Support Engineer</h3>
-                    <p>Gavin is now starting his 4th year at TechCentre as a Senior Support Engineer. <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Team/GavinWilby.aspx">Read Gavin’s story</asp:HyperLink>.</p>
+                    <p>Gavin has been at TechCentre for over 6 years as a Senior Support Engineer. <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Team/GavinWilby.aspx">Read Gavin’s story</asp:HyperLink>.</p>
                 </div>
             </li>
             <li>
@@ -76,21 +76,9 @@
                 <div class="teamIndexText">
                     <h2><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Team/TomKeating.aspx">Tom Keating</asp:HyperLink></h2>
                     <h3>Sales and Marketing Co-ordinator</h3>
-                    <p>Tom has recently joined the company as our Sales &amp; Marketing Co-ordinator. <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Team/TomKeating.aspx">Read Tom’s story</asp:HyperLink>.</p>
+                    <p>Tom joined the company as our Sales &amp; Marketing Co-ordinator. <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Team/TomKeating.aspx">Read Tom’s story</asp:HyperLink>.</p>
                 </div>
             </li>
-            <li>
-                <div class="teamIndexImage">
-                    <asp:HyperLink ID="HyperLink16" runat="server" NavigateUrl="~/Team/RalphChambers.aspx">
-                        <asp:Image ID="Image6" runat="server" AlternateText="Ralph Chambers" ImageUrl="~/Images/Team/RalphChambersSmall.jpg" />
-                    </asp:HyperLink>
-                </div>
-                <div class="teamIndexText">
-                    <h2><asp:HyperLink ID="HyperLink17" runat="server" NavigateUrl="~/Team/RalphChambers.aspx">Ralph Chambers</asp:HyperLink></h2>
-                    <h3>Support Engineer</h3>
-                    <p>Ralph has recently joined the company as a Support Engineer. <asp:HyperLink ID="HyperLink18" runat="server" NavigateUrl="~/Team/RalphChambers.aspx">Read Ralph’s story</asp:HyperLink>.</p>
-                </div>
-            </li>
-        </ul>
+            </ul>
     </div>
 </asp:Content>

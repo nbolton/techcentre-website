@@ -1,9 +1,7 @@
 <%@ Page Language="C#" MasterPageFile="~/StandardMaster.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Rensoft.TechCentre.WebSite.DisasterRecovery.Default" Title="Disaster Recovery" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="StandardContentPlaceHolder" runat="server">
     <h1>Disaster Recovery</h1>
-    <p>At our corporate headquarters on Woodbourne Road, we have facilities to provide office space for your recovery. We can provide different levels of service depending on your requirements, from a fully working office with workstations, servers, printers and faxes to a desk in a room.</p>
-    <p>Our suites come with everyday facilities like boardroom, library, kitchen, toilets with shower, and large parking area.</p>
-    <p>We also offer:</p>
+    <p>At our corporate headquarters on Woodbourne Road, we have facilities to provide office space for your recovery. We can provide different levels of service depending on your requirements.</p>
     <ul>
         <li>Data Tape Storage</li>
         <li>Recovery Hardware Storage (i.e. spare servers or workstations)</li>

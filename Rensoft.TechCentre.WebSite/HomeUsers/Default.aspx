@@ -13,6 +13,8 @@
         <li>Hard Drive Upgrade</li>
         <li>Printer Installations</li>
         <li>Data Backup</li>
+		<li>Easy Backup Solution</li>
+		<li>Crypto Key – Secure USB</li>
     </ul>
     <p>We also sell computers and laptops, <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Contact.aspx">drop us a line</asp:HyperLink> to see what offers we have.</p>
 </asp:Content>

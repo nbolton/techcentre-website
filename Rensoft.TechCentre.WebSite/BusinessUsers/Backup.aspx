@@ -10,5 +10,8 @@
         <li>External Hard Drive (Raid)</li>
         <li>Tape Drive</li>
         <li>Network Backup</li>
+		<li>Easy Backup Solution</li>
+		<li>Crypto Key – Secure USB</li>
+		<li>Mail Archiving Solutions</li>
     </ul>
 </asp:Content>

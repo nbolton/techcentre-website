@@ -9,6 +9,7 @@
         <li>14 day warranty on work completed</li>
         <li>View and log jobs over the internet, past and present</li>
         <li>Response times to suit your needs</li>
+		<li>Emergency Server Cover (Lifeguard policy)</li>
     </ul>
     
     <h2>Services</h2>

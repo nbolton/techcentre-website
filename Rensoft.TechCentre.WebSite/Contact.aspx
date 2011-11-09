@@ -2,7 +2,7 @@
 <%@ Register Assembly="MSCaptcha" Namespace="MSCaptcha" TagPrefix="cc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="StandardContentPlaceHolder" runat="server">
     <h1>Contact</h1>
-    <p>Do you have a question, comment or suggestion? We always apreciate customer feedback.</p>
+    <p>Do you have a question, comment or suggestion? We always appreciate customer feedback.</p>
     
     <ul>
         <li><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Team/Default.aspx">Meet the team</asp:HyperLink></li>
@@ -71,10 +71,10 @@
     <p>
         TechCentre<br />
         Technology House<br />
-        97 Woodbourne Road<br />
+        Woodbourne Lane<br />
         Douglas<br />
         Isle of Man<br />
-        IM1 3AW<br />
+        IM1 3LJ<br />
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/About/HowToFind.aspx">See on map</asp:HyperLink>
     </p>
 </asp:Content>
