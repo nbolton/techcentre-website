@@ -2,13 +2,23 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="StandardContentPlaceHolder" runat="server">
     
     <h1>How to find TechCentre</h1>
-    <asp:Image ID="OfficeImage" runat="server" ImageUrl="~/Images/About/Office.jpg" AlternateText="The TechCentre Office" />
     <p>Use our interactive map of Douglas to easily find your way around. You can also print the map and take it with you.</p>
     
     <div class="mapIcons">
-        <a href="javascript:;" onclick="alert('Please ensure popups are allowed.'); VEOpenPrint(); return false;"><asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Standard/PrintIcon.gif" /></a>
-        <div class="mapIconsText"><a href="javascript:;" onclick="alert('Please ensure popups are allowed.'); VEOpenPrint(); return false;">Print</a></div>
+        <asp:HyperLink ID="HyperLink23" runat="server" NavigateUrl="~/About/HowToFindPrint.aspx" Target="_blank"><asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Standard/PrintIcon.gif" /></asp:HyperLink>
+        <div class="mapIconsText"><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/About/HowToFindPrint.aspx" Target="_blank">Print</asp:HyperLink></div>
     </div>
-    <div id="liveMap" class="mapLayer"></div>
+    <div id="mapDiv" class="mapLayer"></div>
+    <script type="text/javascript">
+        GetMap();
+    </script>
+    <p>
+        TechCentre<br />
+        Technology House<br />
+        Woodbourne Lane<br />
+        Douglas<br />
+        Isle of Man<br />
+        IM1 3LJ<br />
+    </p>
     
 </asp:Content>

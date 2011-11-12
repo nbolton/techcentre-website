@@ -6,10 +6,10 @@
 <head runat="server">
     <title>How to find TechCentre</title>
     <link type="text/css" href="~/Styles/MapPrint.css" rel="stylesheet" />
-    <script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=6.1"></script>
-    <script type="text/javascript" src="<%=Request.ApplicationPath%>JScript/LiveMap.js"></script>
+    <script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+    <script type="text/javascript" src="<%=Request.ApplicationPath%>JScript/BingMap.js"></script>
 </head>
-<body onload="VELoad()">
+<body onload="GetMap()">
     <form id="form1" runat="server">
         <div>
             <div class="topBar">
@@ -21,7 +21,15 @@
                     <div class="topBarIconsText"><a href="javascript:window.print();">Print</a></div>
                 </div>
             </div>
-            <div id="liveMap" class="mapLayer"></div>
+            <div id="mapDiv" class="mapLayer"></div>
+            <p>
+                TechCentre<br />
+                Technology House<br />
+                Woodbourne Lane<br />
+                Douglas<br />
+                Isle of Man<br />
+                IM1 3LJ<br />
+            </p>
         </div>
     </form>
 </body>

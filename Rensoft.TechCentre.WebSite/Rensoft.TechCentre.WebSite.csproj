@@ -266,47 +266,12 @@
     <Compile Include="StandardMaster.Master.designer.cs">
       <DependentUpon>StandardMaster.Master</DependentUpon>
     </Compile>
-    <Compile Include="Team\GavinWilby.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>GavinWilby.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Team\GavinWilby.aspx.designer.cs">
-      <DependentUpon>GavinWilby.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Team\MandySayle.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>MandySayle.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Team\MandySayle.aspx.designer.cs">
-      <DependentUpon>MandySayle.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Team\Profile.aspx.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Team\Profile.aspx.designer.cs">
       <DependentUpon>Profile.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Team\RalphChambers.aspx.cs">
-      <DependentUpon>RalphChambers.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Team\RalphChambers.aspx.designer.cs">
-      <DependentUpon>RalphChambers.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Team\TomKeating.aspx.cs">
-      <DependentUpon>TomKeating.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Team\TomKeating.aspx.designer.cs">
-      <DependentUpon>TomKeating.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Team\WesleyKitching.aspx.cs">
-      <DependentUpon>WesleyKitching.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Team\WesleyKitching.aspx.designer.cs">
-      <DependentUpon>WesleyKitching.aspx</DependentUpon>
     </Compile>
     <Compile Include="TermsAndConditions.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -335,8 +300,8 @@
     <Content Include="Images\Partners\Purple.jpg" />
     <Content Include="Images\Sudoku\Sudoku-July-2008.gif" />
     <Content Include="Images\Sudoku\Sudoku-June-2008.gif" />
-    <Content Include="Images\Team\ChrisNaylorLarge.jpg" />
-    <Content Include="Images\Team\ChrisNaylorSmall.jpg" />
+    <Content Include="Images\Team\ChristianNaylorLarge.jpg" />
+    <Content Include="Images\Team\ChristianNaylorSmall.jpg" />
     <Content Include="Images\Team\ClaireKeatingLarge.jpg" />
     <Content Include="Images\Team\ClaireKeatingSmall.jpg" />
     <Content Include="Images\Team\DavidKeatingLarge.jpg" />
@@ -407,7 +372,6 @@
     <Content Include="Images\Standard\StandardContentFloor.gif" />
     <Content Include="DomainChecker\Default.aspx" />
     <Content Include="DomainChecker\DomainWhois.aspx" />
-    <Content Include="JScript\LiveMap.js" />
     <Content Include="RemoteAssistance\Default.aspx" />
     <Content Include="JScript\Default.js" />
     <Content Include="Menu\Menu.ascx" />
@@ -420,8 +384,6 @@
     <Content Include="Styles\Error.css" />
     <Content Include="Styles\MapPrint.css" />
     <Content Include="Styles\Whois.css" />
-    <Content Include="Team\GavinWilby.aspx" />
-    <Content Include="Team\MandySayle.aspx" />
     <Content Include="TermsAndConditions.aspx" />
     <Content Include="HomeUsers\Default.aspx" />
   </ItemGroup>
@@ -435,9 +397,19 @@
     <Content Include="Content\BusinessUsers\Networking.html" />
     <Content Include="Content\Charity\charity1.jpg" />
     <Content Include="Content\Charity\focc.gif" />
+    <Content Include="Content\DataRecovery\Default.html" />
+    <Content Include="Content\DisasterRecovery\Default.html">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Content\HomeUsers\Default.html" />
     <Content Include="Content\Team\Default.html" />
     <Content Include="Content\Team\Profiles\ChristianNaylor.html" />
     <Content Include="Content\Team\Profiles\DavidKeating.html" />
+    <Content Include="Content\Team\Profiles\GavinWilby.html" />
+    <Content Include="Content\Team\Profiles\MandyShields.html" />
+    <Content Include="Content\Team\Profiles\RalphChambers.html" />
+    <Content Include="Content\Team\Profiles\TomKeating.html" />
+    <Content Include="Content\Team\Profiles\WesleyKitching.html" />
     <Content Include="Images\About\Office.jpg" />
     <Content Include="Images\Sudoku\Sudoku-September-2008.gif" />
     <Content Include="Images\Sudoku\Sudoku-August-2008.gif" />
@@ -451,11 +423,9 @@
     <Content Include="Images\Team\RalphChambersSmall.jpg" />
     <Content Include="Images\Team\TomKeatingLarge.jpg" />
     <Content Include="Images\Team\TomKeatingSmall.jpg" />
+    <Content Include="JScript\BingMap.js" />
     <Content Include="PayPal\PayPalControl.ascx" />
     <Content Include="Team\Profile.aspx" />
-    <Content Include="Team\RalphChambers.aspx" />
-    <Content Include="Team\TomKeating.aspx" />
-    <Content Include="Team\WesleyKitching.aspx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -474,11 +444,6 @@
       <Project>{4DC6274C-34E5-4B6C-9B1B-9C806ED3DB8C}</Project>
       <Name>Rensoft.TechCentre</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\DataRecovery\" />
-    <Folder Include="Content\DisasterRecovery\" />
-    <Folder Include="Content\HomeUsers\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" Condition="" />

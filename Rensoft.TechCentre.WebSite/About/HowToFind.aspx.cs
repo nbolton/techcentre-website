@@ -15,7 +15,7 @@ namespace Rensoft.TechCentre.WebSite.About
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ((RootMaster)Master.Master).Body.Attributes["onload"] = "VELoad()";
+            ((RootMaster)Master.Master).Body.Attributes["onload"] = "GetMap()";
         }
     }
 }
