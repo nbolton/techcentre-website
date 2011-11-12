@@ -298,8 +298,6 @@
     <Content Include="Images\Partners\BestOfBubble.jpg" />
     <Content Include="Images\Partners\DellPartner.jpg" />
     <Content Include="Images\Partners\Purple.jpg" />
-    <Content Include="Images\Sudoku\Sudoku-July-2008.gif" />
-    <Content Include="Images\Sudoku\Sudoku-June-2008.gif" />
     <Content Include="Images\Team\ChristianNaylorLarge.jpg" />
     <Content Include="Images\Team\ChristianNaylorSmall.jpg" />
     <Content Include="Images\Team\ClaireKeatingLarge.jpg" />
@@ -411,13 +409,8 @@
     <Content Include="Content\Team\Profiles\TomKeating.html" />
     <Content Include="Content\Team\Profiles\WesleyKitching.html" />
     <Content Include="Images\About\Office.jpg" />
-    <Content Include="Images\Sudoku\Sudoku-September-2008.gif" />
-    <Content Include="Images\Sudoku\Sudoku-August-2008.gif" />
-    <Content Include="Images\Sudoku\Sudoku-July-2008.pdf" />
-    <Content Include="Images\Sudoku\Sudoku-June-2008.pdf" />
-    <Content Include="Images\Sudoku\Sudoku-August-2008.pdf" />
-    <Content Include="Images\Sudoku\Sudoku-September-2008.pdf" />
     <Content Include="Content\Charity\Default.html" />
+    <Content Include="Images\Standard\Pushpin.png" />
     <Content Include="Images\Team\Everyone2.jpg" />
     <Content Include="Images\Team\RalphChambersLarge.jpg" />
     <Content Include="Images\Team\RalphChambersSmall.jpg" />
