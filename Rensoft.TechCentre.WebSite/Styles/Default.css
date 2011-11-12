@@ -736,6 +736,11 @@ label
 	font-weight: normal;
 }
 
+.teamProfile img
+{
+	float: left;
+}
+
 .teamProfile h1
 {
 	padding-bottom: 3px;

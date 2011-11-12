@@ -23,14 +23,14 @@
     <Setting Name="SmtpDefaultFrom" Type="System.String" Scope="Application">
       <Value Profile="(Default)">TechCentre Website &lt;techcentre-no-reply@auto-email.rensoft.net&gt;</Value>
     </Setting>
-    <Setting Name="ContactFormTo" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">webmaster@rensoft.net</Value>
-    </Setting>
     <Setting Name="EnableErrorReporting" Type="System.Boolean" Scope="Application">
       <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="ErrorReportingServiceUrl" Type="System.String" Scope="Application">
       <Value Profile="(Default)">http://errors.rensoft.net/ReportingService.asmx</Value>
+    </Setting>
+    <Setting Name="ContactFormTo" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">sales@techcentre.co.im</Value>
     </Setting>
   </Settings>
 </SettingsFile>

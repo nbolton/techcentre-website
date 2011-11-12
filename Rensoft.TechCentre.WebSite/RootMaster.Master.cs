@@ -50,8 +50,8 @@ namespace Rensoft.TechCentre.WebSite
             MenuDropDown domainChecker = new MenuDropDown(
                 "domainChecker", "Domain Checker", "~/DomainChecker/Default.aspx");
 
-            MenuDropDown sudoku = new MenuDropDown(
-                "charity", "Charity", "~/CustomContent.aspx?Filename=CharityWeightLoss.html");
+            MenuDropDown charity = new MenuDropDown(
+                "charity", "Charity", "~/Charity/Default.aspx");
 
             businessUsers.Items.AddRange(
                 new MenuDropDownItem[] {
@@ -69,7 +69,7 @@ namespace Rensoft.TechCentre.WebSite
                     dataRecovery,
                     remoteAssistance,
                     domainChecker,
-                    sudoku
+                    charity
                 }
             );
         }
