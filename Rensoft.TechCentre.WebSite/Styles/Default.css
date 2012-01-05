@@ -417,8 +417,9 @@ label
 	width: 170px;
 }
 
-.homeNewsletter
+.homeSocial
 {
+	text-align: right;
 	margin: 0px 9px 9px 9px;
 	width: 742px;
 	height: 36px;
@@ -426,58 +427,11 @@ label
 	background-image: url('../Images/Home/HomeSplashFloor.jpg');
 }
 
-.homeNewsletter p
+.homeSocial div
 {
 	margin: 0px;
-	padding: 0px;
-}
-
-.homeNewsletterInfo,
-.homeNewsletterLabel,
-.homeNewsletterControls
-{
-	float: left;
-}
-
-.homeNewsletterInfo,
-.homeNewsletterLabel
-{
-	text-align: left;
-}
-
-.homeNewsletterInfo,
-.homeNewsletterLabel,
-.homeNewsletterFinish
-{
-	padding: 9px;
-}
-
-.homeNewsletterControls
-{
-	padding: 4px;
-}
-
-.homeNewsletterLabel,
-.homeNewsletterControls
-{
-	text-align: right;
-}
-
-.homeNewsletterInfo
-{
-	width: 405px;
-}
-
-.homeNewsletterLabel
-{
-	width: 103px;
-	font-weight: bold;
-}
-
-.homeNewsletterFinish
-{
-	text-align: center;
-	color: #57AD00;
+	padding: 2px 2px 0px 10px;
+	float: right;
 }
 
 .standardLayout

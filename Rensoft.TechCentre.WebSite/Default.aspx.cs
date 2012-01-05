@@ -24,11 +24,6 @@ namespace Rensoft.TechCentre.WebSite
                 throw new Exception("Test exception.");
             }
 
-            if (!IsPostBack)
-            {
-                NewsletterMultiView.SetActiveView(NewsletterStartView);
-            }
-
             ((RootMaster)Master).Description =
                 "IT support when you need it most. TechCentre is a " +
                 "Microsoft Gold Certified Partner specialising in IT " +
@@ -49,25 +44,6 @@ namespace Rensoft.TechCentre.WebSite
             Random random = new Random(Environment.TickCount);
             string randomSplash = randomSplashes[random.Next(0, randomSplashes.Length)];
             SplashLayer.Style["background-image"] = ResolveUrl(randomSplash);
-        }
-
-        protected void NewsletterButton_Click(object sender, EventArgs e)
-        {
-            SmtpClient client = new SmtpClient(
-                Settings.Default.SmtpServer, Settings.Default.SmtpPort);
-
-            client.Credentials = new NetworkCredential(
-                Settings.Default.SmtpUsername, Settings.Default.SmtpPassword);
-
-            MailMessage message = new MailMessage(
-                NewsletterTextBox.Text.Trim(),
-                Settings.Default.NewsletterSubscribeEmail);
-
-            message.Subject = "Newsletter Subscription";
-
-            client.Send(message);
-
-            NewsletterMultiView.SetActiveView(NewsletterFinishView);
         }
     }
 }

@@ -69,18 +69,11 @@
             </div>
         </div>
     </div>
-    <div class="homeNewsletter">
-        <asp:MultiView ID="NewsletterMultiView" runat="server">
-            <asp:View ID="NewsletterStartView" runat="server">
-                <asp:Panel ID="Panel1" runat="server" DefaultButton="NewsletterButton">
-                    <div class="homeNewsletterInfo"><p>Sign up to the TechCentre newsletter for product and service updates!</p></div>
-                    <div class="homeNewsletterLabel"><p>Email Address:</p></div>
-                    <div class="homeNewsletterControls"><asp:TextBox ID="NewsletterTextBox" runat="server" Width="150px" /> <asp:Button ID="NewsletterButton" runat="server" Text="OK" Width="30px" OnClick="NewsletterButton_Click" /></div>
-                </asp:Panel>
-            </asp:View>
-            <asp:View ID="NewsletterFinishView" runat="server">
-                <div class="homeNewsletterFinish"><p>Thank you for subscribing to the TechCentre newsletter!</p></div>
-            </asp:View>
-        </asp:MultiView>
+    <div class="homeSocial">
+        <div>
+            <asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="http://www.facebook.com/techcentre" Target="_blank"><asp:Image ID="Image7" runat="server" ImageUrl="~/Images/Home/HomeIconFacebook.png" /></asp:HyperLink>
+            <asp:HyperLink ID="HyperLink14" runat="server" NavigateUrl="http://www.twitter.com/techcentre_iom" Target="_blank"><asp:Image ID="Image8" runat="server" ImageUrl="~/Images/Home/HomeIconTwitter.png" /></asp:HyperLink>
+        </div>
+        <div style="padding-top: 10px; font-weight: bold">Follow us:</div>
     </div>
 </asp:Content>

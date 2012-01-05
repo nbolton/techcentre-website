@@ -410,6 +410,8 @@
     <Content Include="Content\Team\Profiles\WesleyKitching.html" />
     <Content Include="Images\About\Office.jpg" />
     <Content Include="Content\Charity\Default.html" />
+    <Content Include="Images\Home\HomeIconFacebook.png" />
+    <Content Include="Images\Home\HomeIconTwitter.png" />
     <Content Include="Images\Standard\Pushpin.png" />
     <Content Include="Images\Team\Everyone2.jpg" />
     <Content Include="Images\Team\RalphChambersLarge.jpg" />
